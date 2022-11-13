@@ -1,0 +1,30 @@
+<view class='page'>
+  <view class='form-list-box'
+    wx:for='{{ formList }}'
+    data-id='{{ item.id }}'
+    bindtap='navigateDetail'>
+    <view class='card'>
+      <view class='card-left'>
+        <image mode='scaleToFill' src='{{item.pics[0].url}}'></image>
+      </view>
+      <view class='card-right'>
+        <view class='card-title'>{{item.title}}</view>
+        <view class='card-content-box'>
+          <view class="card-content-box-row-top">
+            <view class="content-row">
+              电话: {{item.phone}}
+            </view>
+            <view class="content-row">
+              内容: {{item.textarea1}}
+            </view>
+            < view class="content-row">
+              提交时间: {{item.timestamp}}
+            </view>
+           </view>
+          <view class="card-content-box-row-bottom">
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

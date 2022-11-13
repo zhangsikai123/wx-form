@@ -1,0 +1,5 @@
+.submitBtn {
+  padding: 20rpx;
+  margin: 30rpx auto;
+  bottom: 10rpx;
+}

@@ -1,0 +1,38 @@
+<!-- 为登录 -->
+<view wx:if="{{!UserLogin}}" class="head-box" bindtap="NavigateToLogin">
+	<view class="userlogin">
+        <button
+          type="primary" wx:if="{{!userInfo.phoneNumber}}" style="margin-top: 20px;"
+          open-type="getPhoneNumber" bindgetphonenumber="bindPhoneNumber">
+          登录 </button>
+        <view wx:else> phone: {{userInfo.phoneNumber}}</view>
+	</view>
+</view>
+
+<!-- 已登录 -->
+<view wx:else class="head-box" bindtap="ScanPage">
+	<view class="userAvatar-box">
+		<open-data type="userAvatarUrl"></open-data>
+	</view>
+	<view class="userlogin">
+		<view style="font-weight:bold;">欢迎, xxx</view>
+		<view class="font-size-12" style="color:grey;">xxxx: 18511116563</view>
+	</view>
+</view>
+
+<view class="content-box">
+	<view class="content-title font-size-16 ">我的管理</view>
+	<view class="content-row" data-id="form" data-url="../admin_management/index" bindtap="Navigate">
+		<view class="content-icon">
+			<image src="../../image/form.png"></image>
+		</view>
+		<view class="content-text font-size-14">订单总览</view>
+	</view>
+
+	<view class="content-row" data-id="stat" data-url="../admin_stat/index" bindtap="Navigate">
+		<view class="content-icon">
+			<image src="../../image/stat.png"></image>
+		</view>
+		<view class="content-text font-size-14">统计总览</view>
+	</view>
+</view>

@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "lint": "npx eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "@chunpu/http": "^1.0.2",
+    "min-ready": "^2.3.0"
+  }
+}

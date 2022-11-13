@@ -1,0 +1,5 @@
+/* pages/index/index.wxss */
+.navigation {
+  padding: 10px;
+  color: #47B5FF;
+}

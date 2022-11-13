@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/form/index",
+    "pages/admin/index",
+    "pages/admin_management/index",
+    "pages/admin_stat/index",
+    "pages/detail/index",
+    "pages/worker/index",
+    "pages/worker_stat/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

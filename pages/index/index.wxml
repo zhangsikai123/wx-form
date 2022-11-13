@@ -1,0 +1,9 @@
+<view class='page'>
+  <view class='navigation'
+        wx:for='{{routes}}'
+        bindtap='navigate'
+        data-url='{{item.url}}'
+        data-id='{{item.id}}'>
+    <button>{{item.name}}</button>
+  </view>
+</view>
